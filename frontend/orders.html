@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Orders: Burger Mania</title>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Playwrite+CZ:wght@100..400&family=Spicy+Rice&display=swap"
+            rel="stylesheet">
+    
+        <!-- external css -->
+        <link rel="stylesheet" href="./orders.css">
+    </head>
+<body>
+    <!-- navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./burgers.html">Burgers</a></li>
+                <li><a href="./checkout.html">Checkout</a></li>
+                <li><a href="./orders.html" class="current-page">Orders</a></li>
+                <li id="logout-submit-button" class="hidden">Logout</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main body -->
+     <div class="container">
+        <h1>Order History</h1>
+        <div class="order-container">
+            <table>
+                <thead id="table-head">
+                    <tr>
+                        <td>Order Id</td>
+                        <td>Total Quantity</td>
+                        <td>Total Price (Rs)</td>
+                        <td>Discount</td>
+                        <td>Final Price (Rs)</td>
+                        <td>Date (MM/DD/YYYY)</td>
+                        <td>Products</td>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Order rows will be populated here -->
+                </tbody>
+            </table>
+        </div>
+     </div>
+
+    <!-- external js -->
+    <script src="./orders.js"></script>
+</body>
+</html>

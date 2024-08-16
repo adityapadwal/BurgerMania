@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Spicy Rice", serif;
+    margin: 0; /* Remove margin from body */
+    background-color: #f0f0f0; /* Light background for the whole page */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Navbar styles */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky;
+    width: 100%; /* Ensure navbar spans full width */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0; /* Ensure no margin */
+    padding: 0; /* Ensure no padding */
+    width: 100%; /* Ensure ul spans full width */
+}
+
+nav ul li {
+    margin: 0 10px; /* Space between items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Spicy Rice", serif;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ff4d4d;
+}
+
+nav ul li {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Spicy Rice", serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: #ff4d4d;
+}
+
+nav ul li a.current-page {
+    text-decoration: underline;
+}
+
+.dashboard-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.left-panel {
+    width: 75%; /* Adjusted width */
+    padding-right: 20px;
+    background-color: #ffffff; /* White background for left panel */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    margin-right: 20px;
+}
+
+.right-panel {
+    width: 25%; /* Adjusted width */
+    display: flex;
+    flex-direction: column;
+}
+
+.right-top, .right-bottom {
+    margin-bottom: 20px;
+    background-color: #ffffff; /* White background for right sections */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#burger-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.burger-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.burger-card p {
+    margin: 5px 0; /* Add margin for better spacing */
+}
+
+.burger-card button {
+    background-color: red;
+    margin-top: 10px;
+}
+
+.burger-card button:hover {
+    background-color: darkred;
+}
+
+/* Style for burger ID */
+.burger-id {
+    font-size: 12px; /* Smaller font size for burger ID */
+    color: #777; /* Lighter color for burger ID */
+}

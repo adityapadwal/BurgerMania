@@ -1,0 +1,139 @@
+/* Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Animations */
+@keyframes colorChange {
+    0% {
+        background-color: #ff2b2b;
+    }
+
+    25% {
+        background-color: #ff4d4d;
+    }
+
+    50% {
+        background-color: #ff9999;
+    }
+
+    75% {
+        background-color: #ff4d4d;
+    }
+
+    100% {
+        background-color: #ff2b2b;
+    }
+}
+
+/* Navbar styles */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Spicy Rice", serif;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ff4d4d;
+}
+
+nav ul li {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Spicy Rice", serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: #ff4d4d;
+}
+
+nav ul li a.current-page {
+    text-decoration: underline;
+}
+
+/* Body */
+body {
+    animation: colorChange 5s infinite;
+    font-family: "Spicy Rice", serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+}
+
+.order-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.product-list {
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.product-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px; /* Add some space above the product table */
+}
+
+.product-list th, .product-list td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+

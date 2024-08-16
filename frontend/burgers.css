@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+    color: #333;
+}
+
+#burger-list {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.burger-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    width: 225px;
+    text-align: center;
+}
+
+.burger-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.burger-card h3 {
+    margin: 10px 0;
+}
+
+.burger-card label {
+    display: block;
+    margin: 5px 0;
+}
+
+.burger-card select,
+.burger-card input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.burger-card button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.burger-card button:hover {
+    background-color: #45a049;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #ff2b2b;
+    }
+
+    25% {
+        background-color: #ff4d4d;
+    }
+
+    50% {
+        background-color: #ff9999;
+    }
+
+    75% {
+        background-color: #ff4d4d;
+    }
+
+    100% {
+        background-color: #ff2b2b;
+    }
+}
+
+body {
+    animation: colorChange 5s infinite;
+    font-family: "Spicy Rice", serif;
+}
+
+#cart-items {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+}
+
+#add-to-cart-button {
+    font-family: "Spicy Rice", serif;
+    font-size: 24px;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: red;
+    cursor: pointer;
+}
+
+#add-to-cart-button:hover {
+    transform: scale(1.1);
+}
+
+.checkout {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navbar styles */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Spicy Rice", serif;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ff4d4d;
+}
+
+nav ul li {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Spicy Rice", serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: #ff4d4d;
+}
+
+nav ul li a.current-page {
+    text-decoration: underline;
+}
+
+/* Page content styles */
+body {
+    font-family: "Spicy Rice", serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: sticky;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home: Burger Mania</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Playwrite+CZ:wght@100..400&family=Spicy+Rice&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="./index.html" class="current-page">Home</a></li>
+        <li><a href="./burgers.html">Burgers</a></li>
+        <li><a href="./checkout.html">Checkout</a></li>
+        <li><a href="./orders.html">Orders</a></li>
+        <li id="logout-submit-button" class="hidden">Logout</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="video-container">
+        <video id="myVideo" autoplay muted loop>
+          <source src="./utils/burger.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="content-container">
+        <h1>Burger Mania</h1>
+        
+        <!-- Register & Login form -->
+        <div id="formContainer" class="form-container">
+          <div class="form" id="combinedForm">
+              <h2>Login / Register</h2>
+              
+              <label for="username">Username</label>
+              <input id="username" type="text" placeholder="Enter username" required>
+              
+              <label for="mobilenumber">Mobile Number</label>
+              <input id="mobilenumber" type="password" placeholder="Enter Mobile Number" required>
+              
+              <div class="button-container">
+                  <button type="button" id="login-submit-button">Login</button>
+                  <button type="button" id="register-submit-button">Register</button>
+              </div>
+          </div>
+      </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

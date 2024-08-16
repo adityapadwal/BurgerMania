@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgers : Burger Mania</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Playwrite+CZ:wght@100..400&family=Spicy+Rice&display=swap"
+        rel="stylesheet">
+
+    <!-- external CSS -->
+    <link rel="stylesheet" href="burgers.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./burgers.html" class="current-page">Burgers</a></li>
+                <li><a href="./checkout.html">Checkout</a></li>
+                <li><a href="./orders.html">Orders</a></li>
+                <li id="logout-submit-button" class="hidden">Logout</li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Burgers</h1>
+    <div id="burger-list">
+        <!-- Burgers will be rendered here dynamically -->
+    </div>
+    <div class="checkout">
+        <button type="Submit" id="add-to-cart-button">Proceed To Checkout</button>
+    </div>
+
+    <!-- external js -->
+    <script src="burgers.js"></script>
+</body>
+
+</html>

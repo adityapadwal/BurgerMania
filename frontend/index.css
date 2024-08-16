@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    /* animation: colorChange 5s infinite; */
+    /* background-color:#ff4d4d; */
+    background-color: #ff2b2b;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.video-container {
+    flex: 1;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100vh; /* Limit height to viewport height */
+    object-fit: cover; /* Cover the area without distortion */
+}
+
+.content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: black;
+}
+h2 {
+    font-family: "Spicy Rice", serif;
+}
+
+.form-container {
+    display: flex; /* Change to flex to arrange forms side by side */
+    justify-content: space-around; /* Space between forms */
+    align-items: flex-start; /* Align forms to the top */
+    width: 100%; /* Ensure it takes full width */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px; /* Space between forms */
+    width: 250px; /* Set a fixed width for forms */
+}
+
+.form label,
+.form input,
+.form button {
+    font-family: "Spicy Rice", serif;
+    font-size: 20px; /* Reduced font size */
+    margin: 8px 0; /* Reduced margin */
+}
+
+.form input {
+    padding: 4px; /* Reduced padding */
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
+.form button {
+    padding: 4px 8px; /* Reduced padding */
+    border-radius: 5px;
+    border: none;
+    background-color: #ff4d4d;
+    color: white;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #ff2b2b;
+}
+
+@keyframes colorChange {
+    0% { background-color: #ff2b2b; }
+    25% { background-color: #ff4d4d; }
+    50% { background-color: #ff9999; }
+    75% { background-color: #ff4d4d; }
+    100% { background-color: #ff2b2b; }
+}
+
+/* Navbar styles */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Spicy Rice", serif;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ff4d4d;
+}
+
+nav ul li {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Spicy Rice", serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: #ff4d4d;
+}
+
+nav ul li a.current-page {
+    text-decoration: underline;
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center; /* Center the form */
+    align-items: center; /* Center the form vertically */
+    width: 100%;
+}
+
+.form {
+    background-color: white; /* White background for the form */
+    color: black; /* Black text color */
+    border-radius: 10px; /* Slight border radius */
+    padding: 20px; /* Padding inside the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    width: 300px; /* Fixed width for the form */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+    width: 60%; /* Full width for button container */
+}

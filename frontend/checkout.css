@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #ff2b2b;
+    }
+
+    25% {
+        background-color: #ff4d4d;
+    }
+
+    50% {
+        background-color: #ff9999;
+    }
+
+    75% {
+        background-color: #ff4d4d;
+    }
+
+    100% {
+        background-color: #ff2b2b;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    animation: colorChange 5s infinite;
+    font-family: "Spicy Rice", serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout-container {
+    margin-top: 25px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.left-checkout-container,
+.right-checkout-container {
+    flex: 1;
+    text-align: left;
+}
+
+table {
+    background-color: white;
+    border-radius: 10px;
+}
+
+table,
+th,
+tr,
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+thead>tr>td {
+    text-decoration-line: underline;
+}
+
+.removeButton {
+    cursor: pointer;
+}
+
+#submit-button {
+    font-family: "Spicy Rice", serif;
+    font-size: 24px;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: red;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    transform: scale(1.1);
+}
+
+.checkout {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navbar styles */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Spicy Rice", serif;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ff4d4d;
+}
+
+nav ul li {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Spicy Rice", serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: #ff4d4d;
+}
+
+nav ul li a.current-page {
+    text-decoration: underline;
+}

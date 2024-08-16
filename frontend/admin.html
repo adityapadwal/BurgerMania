@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Mania: Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./admin.html" class="current-page">Dashboard</a></li>
+                <li id="logout-submit-button" class="hidden">Logout</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Body -->
+    <h1>Admin Dashboard</h1>
+    <div class="dashboard-container">
+        <div class="left-panel">
+            <h2>Burger List</h2>
+            <div id="burger-list">
+                <!-- Burgers will be rendered here dynamically -->
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="right-top">
+                <h2>Add New Burger</h2>
+                <form id="burger-form">
+                    <input type="text" id="burger-name" placeholder="Burger Name" required>
+                    <input type="text" id="burger-image-url" placeholder="Image URL" required>
+                    <textarea id="burger-categories" placeholder='{"Category1": 100, "Category2": 150}' required></textarea>
+                    <button type="submit">Add Burger</button>
+                </form>
+            </div>
+            <div class="right-bottom">
+                <h2>Edit Burger</h2>
+                <form id="edit-burger-form">
+                    <input type="text" id="edit-burger-id" placeholder="Burger Id" required>
+                    <input type="text" id="edit-burger-name" placeholder="Burger Name" required>
+                    <input type="text" id="edit-burger-image-url" placeholder="Image URL" required>
+                    <textarea id="edit-burger-categories" placeholder='{"Category1": 100, "Category2": 150}' required></textarea>
+                    <button type="submit">Update Burger</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- External JS -->
+    <script src="admin.js"></script>
+</body>
+</html>

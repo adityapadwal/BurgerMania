@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout: Burger Mania</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Playwrite+CZ:wght@100..400&family=Spicy+Rice&display=swap"
+        rel="stylesheet">
+
+    <!-- external css -->
+    <link rel="stylesheet" href="./checkout.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./burgers.html">Burgers</a></li>
+                <li><a href="./checkout.html" class="current-page">Checkout</a></li>
+                <li><a href="./orders.html">Orders</a></li>
+                <li id="logout-submit-button" class="hidden">Logout</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Cart</h1>
+        <div class="cart-container">
+            <table>
+                <thead id="table-head">
+                    <tr>
+                        <td>Burger Type</td>
+                        <td>Burger Category</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Total Price</td>
+                        <td>Remove</td>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="checkout-container">
+            <div class="left-checkout-container">
+                <label for="quantity">Total Quantity: </label> <span id="total-quantity">0</span><br>
+                <label for="price">Total Price: </label> <span id="total-price">0</span><br>
+            </div>
+            <div class="right-checkout-container">
+                <label for="discount">Discount: </label> <span id="discount">0%</span><br>
+                <label for="final-price">Final Price: </label> <span id="final-price">0</span>
+            </div>
+        </div>
+        <div class="checkout">
+            <button type="Submit" id="submit-button">Place Order</button>
+        </div>
+    </div>
+
+    <!-- external js -->
+    <script src="./checkout.js"></script>
+</body>
+
+</html>
